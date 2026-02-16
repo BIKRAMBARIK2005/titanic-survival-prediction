@@ -1,68 +1,100 @@
 # 🚢 Titanic Survival Prediction – Day 29 Project
 
-This project predicts whether a passenger would survive the Titanic disaster using Machine Learning.
+A premium Machine Learning web application built using **Streamlit** that predicts whether a passenger would survive the Titanic disaster.
 
-It includes:
-
-- ✅ Model built **without Pipeline**
-- ✅ Model built **with Pipeline (Recommended)**
-- ✅ Streamlit Web App
-- ✅ Clean folder structure
-- ✅ Deployment-ready setup
+🌍 Live Demo: (Add your Streamlit Cloud link here)
 
 ---
 
-## 📊 Project Overview
+## 📌 Project Overview
 
-The Titanic dataset is used to train a classification model that predicts passenger survival based on:
+This project uses a trained Machine Learning model to predict survival based on:
 
-- Passenger Class (Pclass)
+- Passenger Class
 - Sex
 - Age
-- Siblings/Spouses aboard (SibSp)
-- Parents/Children aboard (Parch)
 - Fare
-- Embarked Port
+- Number of Siblings/Spouses
+- Number of Parents/Children
+- Port of Embarkation
 
-Two different approaches are implemented:
+The application includes:
 
----
-
-## 🔹 1️⃣ Without Pipeline Model
-
-- Manual encoding (OneHotEncoder)
-- Separate preprocessing and model
-- Multiple `.pkl` files:
-  - `clf.pkl`
-  - `ohe_sex.pkl`
-  - `ohe_embarked.pkl`
-
-This version demonstrates understanding of preprocessing steps individually.
+✅ Model built with Pipeline (Recommended)  
+✅ Model built without Pipeline  
+✅ Probability prediction (%)  
+✅ Premium UI Design  
+✅ Responsive Layout  
+✅ Fast optimized loading  
+✅ Portfolio-ready structure  
 
 ---
 
-## 🔹 2️⃣ Pipeline Model (Recommended)
+## 🧠 Machine Learning
 
-- Uses `sklearn Pipeline`
-- Combines preprocessing + model
-- Single file:
-  - `pipe.pkl`
+The model was trained on the Titanic dataset using:
 
-This version is cleaner, production-ready, and easier to deploy.
-
----
-
-## 🌐 Streamlit Web App
-
-The project includes a fully responsive web application built using **Streamlit**.
-
-Users can:
-
-- Select model type (Pipeline / Without Pipeline)
-- Enter passenger details
-- Instantly get survival prediction
+- Scikit-learn
+- Pipeline preprocessing
+- OneHotEncoding
+- Logistic Regression
 
 ---
 
-## 📂 Folder Structure
+## 🌐 Streamlit Web App Features
 
+- 🎯 Instant prediction
+- 📊 Survival probability %
+- 🎉 Animated result display
+- ⏳ Loading spinner
+- 📥 Download prediction report (optional future upgrade)
+- ⚡ Fast deployment via Streamlit Cloud
+
+---
+
+## 📁 Folder Structure
+
+```
+titanic-survival-prediction/
+│
+├── models_with_pipeline/
+│   └── pipe.pkl
+│
+├── models_without_pipeline/
+│   ├── clf.pkl
+│   ├── ohe_sex.pkl
+│   └── ohe_embarked.pkl
+│
+├── notebooks/
+│   ├── titanic_using_pipeline.ipynb
+│   ├── titanic_without_using_pipelining.ipynb
+│   ├── predict_using_pipeline.ipynb
+│   ├── predict_without_pipeline.ipynb
+│   └── train.csv
+│
+├── streamlit_app.py
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 🚀 Deployment
+
+This project is deployed using:
+
+- GitHub
+- Streamlit Community Cloud
+
+Deployment updates automatically on every push to main branch.
+
+---
+
+## 👨‍💻 Author
+
+**Bikram Barik**  
+Machine Learning Enthusiast 🚀  
+
+---
+
+⭐ If you like this project, consider giving it a star!
